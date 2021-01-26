@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap");
+h3 {
+  font-size: 25px;
+  font-weight: 350;
+  padding-top: 0px;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+.card {
+  position: fixed;
+  top: 80px;
+  left: 250px;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+.card-body {
+  padding: 0.25rem;
+}
+
+.searchbar {
+  width: 350px;
+  height: 40px;
+  margin: 5px;
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: blueviolet;
+  border-color: blueviolet;
+}
+
+.alert {
+  width: 200px;
+  height: 35px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #eef0fa;
+  border-color: #eef0fa;
+  color: #596aca;
+  left: 10px;
+  font-size: larger;
+}
+
+.city {
+  position: relative;
+  color: #42a5f5;
+  font-size: 65px;
+  left: 60px;
+}
+
+.big-icon {
+  font-size: 85px;
+  position: relative;
+  left: 40px;
+}
+
+.temperature {
+  position: relative;
+  color: #265173;
+  font-size: 85px;
+  left: 50px;
+}
+
+.units {
+  font-size: 64px;
+}
+
+.weather-info {
+  position: relative;
+  left: 500px;
+  top: -150px;
+  height: 175px;
+  border: 1px solid;
+  border-color: #98dcd9;
+  border-radius: 5px;
+  background-color: #e4f6f5;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  color: #5173c6;
+  padding-left: 10px;
+}
+
+.weather-girl {
+  position: relative;
+  left: 435px;
+  bottom: 215px;
+  font-size: 80px;
+}
+
+.forecast {
+  position: relative;
+  left: 24px;
+  bottom: 235px;
+  height: 225px;
+  border: 3px solid;
+  border-color: #596aca;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.days {
+  top: 450px;
+  left: 50px;
+  border: 2px solid;
+  border-color: #596aca;
+  border-radius: 3px;
+  height: 200px;
+  text-align: center;
+  margin: -1px;
+  color: #42a5f5;
+  font-size: 24px;
+}
+
+.forecast-temp {
+  color: #5a6275;
+  font-size: 40px;
+}
+
+.fa-sun {
+  color: #ffb200;
+}
+
+.fa-cloud {
+  color: #efeded;
+}
+
+.fa-cloud-sun {
+  color: #efeded;
+}
+
+#celcius-temp,
+#fahrenheit-temp {
+  font-size: 30px;
+  position: relative;
+  top: -30px;
+  left: 55px;
+}
