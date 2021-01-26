@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/a119769e7e.js" crossorigin="anonymous"> </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app wireframe</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 850px;">
+                    <div style="height: 600px;">
+                        <div class="card-body">
+                            <form id="search-form">
+                                <input type="text" class="searchbar" id="city-name" placeholder="Enter a city">
+                                <button type="submit" class="btn btn-primary" id="search-bar">Search</button>
+                                <button type="button" class="btn btn-info" id="current">Current</button>
+                            </form>
+
+                            <div class="alert alert-info" role="alert" id="today-date">
+                                Today: Friday 21:30
+                            </div>
+
+                            <h1 class="city" id="input-city">Edmonton </h1>
+                            <span class="big-icon"> <i class="fas fa-cloud"></i> </span>
+                            <span class="temperature" id="temperature"> -3 </span>
+                            <span class="units">
+                                <a href="#" id="celcius-temp">°C |<a href="#" id="fahrenheit-temp">°F
+                                    </a>
+                                </a>
+                            </span>
+
+                            <div class="weather-info" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h3>
+                                        <div>
+                                            Sunrise: 08:45
+                                        </div>
+                                        <div>
+                                            Sunset: 16:14
+                                        </div>
+                                        <div id="wind">
+                                            Wind: 11 km/h
+                                        </div>
+                                        <div>
+                                            Feels like: -7°C
+                                        </div>
+                                        <div>
+                                            Chance of snow:0%
+                                        </div>
+                                    </h3>
+
+                                </div>
+                            </div>
+
+                            <div class="weather-girl">
+                                💁🏾‍♀️
+                            </div>
+
+                            <div class="forecast" style="width: 50rem;">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="days" style="width: 8rem;">
+
+                                            <div>
+                                                Saturday
+                                                <br />
+                                                <div class=forecast-temp>
+                                                    2°C
+                                                    <br />
+                                                    <i class="fas fa-sun"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="days" style="width: 8rem;">
+
+                                            <div>
+                                                Sunday
+                                                <br />
+                                                <div class=forecast-temp>
+                                                    2°C
+                                                    <br />
+                                                    <i class="fas fa-sun"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="days" style="width: 8rem;">
+
+                                            <div>
+                                                Monday
+                                                <div class=forecast-temp>
+
+                                                    -2°C
+                                                    <br />
+                                                    <i class="fas fa-cloud"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="days" style="width: 8rem;">
+
+                                            <div>
+                                                Tuesday
+                                                <div class=forecast-temp>
+                                                    -7°C
+                                                    <br />
+                                                    <i class="fas fa-cloud-sun"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="days" style="width: 8rem;">
+
+                                            <div>
+                                                Wednesday
+                                                <div class=forecast-temp>
+                                                    -1°C
+                                                    <br />
+                                                    <i class="fas fa-cloud"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
