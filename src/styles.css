@@ -135,3 +135,7 @@ body {
 #description {
   text-transform: capitalize;
 }
+
+a:hover {
+  text-decoration: none;
+}
