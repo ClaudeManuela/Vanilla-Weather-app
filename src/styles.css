@@ -72,7 +72,7 @@ body {
 .weather-info {
   position: relative;
   left: 450px;
-  top: -150px;
+  top: -170px;
   height: 145px;
   border: 1px solid;
   border-color: #98dcd9;
@@ -94,15 +94,20 @@ body {
   padding: 10px 20px;
 }
 
+.row-forecast {
+  padding: 0px;
+}
+
 .days {
   top: 450px;
   left: 50px;
-  border: 2px solid;
-  border-color: #596aca;
+  border: 1px solid;
+  border-color: whitesmoke;
   border-radius: 3px;
   height: 170px;
   text-align: center;
-  margin: -1px;
+  margin: 5px;
+  padding: 0px;
   color: #42a5f5;
   font-size: 24px;
 }
@@ -138,4 +143,10 @@ body {
 
 a:hover {
   text-decoration: none;
+}
+
+p {
+  position: absolute;
+  left: 250px;
+  top: 640px;
 }
