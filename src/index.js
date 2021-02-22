@@ -45,6 +45,7 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML = ` ${response.data.weather[0].description}`
   document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity}%`
   document.querySelector("#feels-like").innerHTML = `Feels like:  ${response.data.main.feels_like}°C`
+  document.querySelector("#icon").setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
 }
 
 function randomCity(event) {

@@ -52,9 +52,10 @@ body {
 }
 
 .big-icon {
-  font-size: 85px;
   position: relative;
   left: 40px;
+  height: 159px;
+  top: -20px;
 }
 
 .temperature {
@@ -70,7 +71,7 @@ body {
 
 .weather-info {
   position: relative;
-  left: 400px;
+  left: 450px;
   top: -150px;
   height: 145px;
   border: 1px solid;
@@ -82,17 +83,10 @@ body {
   padding-left: 10px;
 }
 
-.weather-girl {
-  position: relative;
-  left: 435px;
-  bottom: 215px;
-  font-size: 80px;
-}
-
 .forecast {
   position: relative;
   left: 24px;
-  bottom: 235px;
+  top: -135px;
   height: 225px;
   border: 3px solid;
   border-color: #596aca;
