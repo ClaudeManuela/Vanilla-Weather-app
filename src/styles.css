@@ -137,3 +137,7 @@ body {
   top: -30px;
   left: 55px;
 }
+
+#description {
+  text-transform: capitalize;
+}

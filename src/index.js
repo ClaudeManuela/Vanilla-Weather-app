@@ -40,6 +40,8 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
     response.data.wind.speed
   )} km/h`;
+
+  document.querySelector("#description").innerHTML = ` ${response.data.weather[0].description}`
 }
 
 function randomCity(event) {
