@@ -70,9 +70,9 @@ body {
 
 .weather-info {
   position: relative;
-  left: 500px;
+  left: 400px;
   top: -150px;
-  height: 175px;
+  height: 145px;
   border: 1px solid;
   border-color: #98dcd9;
   border-radius: 5px;

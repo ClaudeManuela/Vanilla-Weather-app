@@ -33,6 +33,7 @@ function search(city) {
 }
 
 function showWeather(response) {
+  console.log(response)
   document.querySelector("#input-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -42,6 +43,8 @@ function showWeather(response) {
   )} km/h`;
 
   document.querySelector("#description").innerHTML = ` ${response.data.weather[0].description}`
+  document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity}%`
+  document.querySelector("#feels-like").innerHTML = `Feels like:  ${response.data.main.feels_like}°C`
 }
 
 function randomCity(event) {
