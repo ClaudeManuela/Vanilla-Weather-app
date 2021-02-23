@@ -101,6 +101,7 @@ function findLocation(position) {
 function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(findLocation);
+  displayForecast(position);
 }
 
 let button = document.querySelector("#search-form");
