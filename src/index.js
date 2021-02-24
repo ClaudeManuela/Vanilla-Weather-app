@@ -96,12 +96,12 @@ function findLocation(position) {
   let apiKey = "53a928a54f9cfac5d9a2b1324d145d62";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
-
 function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(findLocation);
-  displayForecast(position);
 }
 
 let button = document.querySelector("#search-form");
@@ -109,6 +109,8 @@ button.addEventListener("submit", getTemp);
 
 let currentbutton = document.querySelector("#current");
 currentbutton.addEventListener("click", getPosition);
+
+
 
 // for converting celcius to Fahrenheit and vice versa
 let Celciustemperature = null;
